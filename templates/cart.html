@@ -1,0 +1,19 @@
+{% extends 'C:\Users\davla\PycharmProjects\Django2\Django2\templates\menu.html'%}
+
+
+{% block title %}
+cart
+{% endblock %}
+
+{% block header %}
+<h1> Корзина </h1>
+{% endblock %}
+
+{% block navigation %}
+    {{block.super}}
+{% endblock  %}
+
+
+{% block content %}
+<h3> Извините, ваша корзина пуста.</h3>
+{% endblock %}

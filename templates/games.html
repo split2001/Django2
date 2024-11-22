@@ -1,0 +1,26 @@
+{% extends 'C:\Users\davla\PycharmProjects\Django2\Django2\templates\menu.html'%}
+
+
+{% block title %}
+games
+{% endblock %}
+
+{% block header %}
+<h1> Игры </h1>
+{% endblock %}
+
+{% block navigation %}
+    {{block.super}}
+{% endblock  %}
+
+
+{% block content %}
+    {% for game in Games %}
+    <h3>{{game.title}}|{{game.description}}. Стоимость:{{game.cost}} <button>Купить</button> </h3>
+    {% endfor %}
+    <a href="/platform">
+    <button>Вернуться обратно</button>
+    </a>
+{% endblock %}
+
+
